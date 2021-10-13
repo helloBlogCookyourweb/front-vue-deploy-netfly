@@ -1,5 +1,5 @@
 <template>
-   <div id="app">
+  <div id="app">
     <Nav />
     <router-view :key="$route.fullPath"></router-view>
   </div>
@@ -9,12 +9,13 @@ import Nav from "./components/Nav.vue";
 
 export default {
   name: "App",
-  components: { Nav }
+  components: { Nav },
 };
 </script>
 <style lang="css">
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: aqua;
 }
 
 h1 {
